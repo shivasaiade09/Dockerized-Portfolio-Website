@@ -1,0 +1,32 @@
+.cert-section {
+  padding: 70px 20px;
+  background: #111827;
+  text-align: center;
+  color: white;
+}
+
+.cert-section h2 {
+  font-size: 34px;
+  color: #00f7ff;
+  margin-bottom: 30px;
+}
+
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cert-card {
+  width: 260px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+  border-left: 4px solid #00f7ff;
+  transition: 0.3s;
+}
+
+.cert-card:hover {
+  transform: translateY(-10px);
+}
