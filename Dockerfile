@@ -1,22 +1,17 @@
-# Stage 1: Builder
-FROM alpine:3.20 AS builder
-
-WORKDIR /app
-COPY . .
-
-# Stage 2: Nginx runtime
+# Use lightweight Nginx image
 FROM nginx:alpine
 
+# Set working directory
 WORKDIR /usr/share/nginx/html
 
-# Remove default files
+# Remove default nginx website files
 RUN rm -rf ./*
 
-# Copy project
-COPY --from=builder /app .
+# Copy all project files into nginx directory
+COPY . .
 
-# Expose port
+# Expose port 80
 EXPOSE 80
 
-# Run nginx
+# Start nginx in foreground
 CMD ["nginx", "-g", "daemon off;"]
