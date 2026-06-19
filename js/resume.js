@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (btn) {
         btn.addEventListener("click", () => {
             const link = document.createElement("a");
-            link.href = "assets/resume/Shiva_Sai_Resume.pdf";
-            link.download = "Shiva_Sai_Resume.pdf";
+            link.href = "images/resume/Shiva-Resume.pdf";
+            link.download = "Shiva-Resume.pdf";
             link.click();
         });
     }
