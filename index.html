@@ -2,29 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Inside your <body> tag -->
-    <link rel="stylesheet" href="./css/animations.css">
-<link rel="stylesheet" href="./css/effects.css">
-
-<!-- 1. Colorful Navigation Tabs -->
-<main class="container">
-    <section id="contact" class="content-section">
-        <h2>Contact Me</h2>
-        <div class="contact-card">
-            <p>📧 Email: <a href="mailto:your_email@example.com">shivasaiade@gmail.com</a></p>
-            <p>💼 LinkedIn: <a href="#" target="_blank">linkedin.com/in/shiva-sai-ade-366179337</a></p>
-            <p>🐙 GitHub: <a href="#" target="_blank">github.com/shivasaiade09</a></p>
-        </div>
-    </section>
-</main>
-    <div class="fade-in">About Me</div>
-
-<div class="slide-left">Skills</div>
-
-<div class="zoom-in">Projects</div>
-
-<!-- Ensure this script tag is right before your closing </body> tag -->
-<script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -32,9 +9,10 @@
 
     <link rel="icon" href="assets/favicon.ico">
 
-    <!-- Main CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/effects.css">
     <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Font Awesome -->
@@ -44,192 +22,167 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-   <script src="./js/animations.js"></script>
-<script src="./js/theme-toggle.js"></script>
-<script src="./js/toast.js"></script>
-<script src="./js/cursor.js"></script>
-<script src="./assets/particles.js"></script>
+
+    <!-- JS -->
+    <script src="./js/animations.js"></script>
+    <script src="./js/theme-toggle.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/cursor.js"></script>
+    <script src="./assets/particles.js"></script>
+
 </head>
 
 <body>
-    <!-- Skills -->
-<div id="skills"></div>
 
-<!-- Certificates -->
-<div id="certificates"></div>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
 
-<!-- Contact -->
-<div id="contact"></div>
+    <div class="logo">
+        <span>Shiva Sai Ade</span>
+    </div>
 
-    <!-- =========================
-         Navigation Bar
-    ========================== -->
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 
-    <nav class="navbar">
+</nav>
 
-        <div class="logo">
-            <span>Shiva Sai Ade</span>
+<!-- ================= HERO SECTION ================= -->
+<section id="home" class="hero">
+
+    <div id="particles-js"></div>
+
+    <div class="hero-content">
+
+        <img src="images/profile.png" class="profile-img" alt="Profile">
+
+        <h3>Hello, I'm</h3>
+        <h1>Shiva Sai Ade</h1>
+
+        <h2><span id="typing"></span></h2>
+
+        <p>
+            Passionate DevOps Engineer with hands-on experience in AWS, Docker, Kubernetes,
+            Jenkins, Terraform, Ansible, Git, Linux, and CI/CD pipelines.
+
+            I specialize in building scalable, automated cloud infrastructure and improving
+            deployment workflows using DevOps best practices.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="assets/resume.pdf" class="btn primary" download>Download Resume</a>
+            <a href="#projects" class="btn secondary">View Projects</a>
         </div>
 
-        <ul class="nav-links">
+        <div class="social-icons">
+            <a href="https://github.com/shivasaiade09" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
 
-            <li><a href="#home">Home</a></li>
+            <a href="https://linkedin.com" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
 
-            <li><a href="#about">About</a></li>
-
-            <li><a href="#skills">Skills</a></li>
-
-            <li><a href="#projects">Projects</a></li>
-
-            <li><a href="#certifications">Certificates</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-
-        </ul>
-
-        <div class="nav-buttons">
-
-            <button id="darkModeBtn">
-                <i class="fas fa-moon"></i>
-            </button>
-
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-
+            <a href="mailto:shivasaiade@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
         </div>
 
-    </nav>
-    <section id="skills">
-  <!-- paste skills.html content here -->
-</section>
-    <section id="certificates">
-  <!-- paste certificates.html content here -->
-</section>
-    <section id="contact">
-  <!-- paste contact.html content here -->
+    </div>
+
 </section>
 
-    <!-- =========================
-            Hero Section
-    ========================== -->
+<!-- ================= ABOUT SECTION ================= -->
+<section id="about">
 
-    <section id="home" class="hero">
+    <div class="section-title">
+        <h2>About Me</h2>
+    </div>
 
-        <div id="particles-js"></div>
+    <div class="about-container">
 
-        <div class="hero-content">
-
-            <img src="images/profile.png"
-                class="profile-img"
-                alt="Profile">
-
-            <h3>Hello, I'm</h3>
-
-            <h1>Shiva Sai Ade</h1>
-
-            <h2>
-                <span id="typing"></span>
-            </h2>
-
+        <div class="about-text">
             <p>
-
-                Passionate DevOps Engineer with hands-on experience in
-AWS, Docker, Kubernetes, Jenkins, Terraform, Ansible, Git, Linux, and CI/CD pipelines.
-
-I specialize in building, automating, and optimizing end-to-end deployment workflows for scalable and highly available systems.
-
-I enjoy designing cloud-native infrastructure, improving system reliability, and implementing infrastructure as code (IaC) to ensure consistent and repeatable deployments.
-
-I have practical experience in containerization, orchestration, and continuous integration/delivery, with a strong focus on reducing deployment time and improving system performance.
-
-I am highly motivated to work in fast-paced environments where I can contribute to automation, cloud optimization, and DevOps best practices.
-
+                I am a passionate DevOps Engineer and Cloud Enthusiast with practical experience in AWS,
+                Docker, Kubernetes, Jenkins, Terraform, Git, Linux, and CI/CD pipelines.
             </p>
 
-            <div class="hero-buttons">
-
-                <a href="assets/resume.pdf"
-                    class="btn primary"
-                    download>
-
-                    Download Resume
-
-                </a>
-
-                <a href="#projects"
-                    class="btn secondary">
-
-                    View Projects
-
-                </a>
-
-            </div>
-
-            <div class="social-icons">
-
-                <a href="https://github.com/yourusername" target="_blank">
-
-                    <i class="fab fa-github"></i>
-
-                </a>
-
-                <a href="https://linkedin.com/in/yourusername" target="_blank">
-
-                    <i class="fab fa-linkedin"></i>
-
-                </a>
-
-                <a href="mailto:yourmail@gmail.com">
-
-                    <i class="fas fa-envelope"></i>
-
-                </a>
-
-            </div>
-
+            <p>
+                I enjoy automating infrastructure, deploying applications, and improving software delivery
+                using DevOps methodologies and cloud-native practices.
+            </p>
         </div>
 
-    </section>
+    </div>
 
-    <!-- =========================
-         About Section
-    ========================== -->
+</section>
 
-    <section id="about">
+<!-- ================= SKILLS SECTION ================= -->
+<section id="skills">
 
-        <div class="section-title">
+    <div class="section-title">
+        <h2>Skills</h2>
+    </div>
 
-            <h2>About Me</h2>
+    <div class="skills-grid">
 
-            <div class="underline"></div>
+        <img src="images/aws.png" alt="AWS">
+        <img src="images/docker.png" alt="Docker">
+        <img src="images/k8s.png" alt="Kubernetes">
+        <img src="images/jenkins.png" alt="Jenkins">
+        <img src="images/terraform.png" alt="Terraform">
+        <img src="images/ansible.png" alt="Ansible">
+        <img src="images/linux.png" alt="Linux">
+        <img src="images/github.png" alt="GitHub">
 
-        </div>
+    </div>
 
-        <div class="about-container">
+</section>
 
-            <div class="about-text">
+<!-- ================= PROJECTS SECTION ================= -->
+<section id="projects">
 
-                <p>
+    <div class="section-title">
+        <h2>Projects</h2>
+    </div>
 
-                    I am a passionate DevOps Engineer and Cloud Enthusiast
-                    with practical experience in AWS, Docker,
-                    Kubernetes, Jenkins, Terraform, Git,
-                    Linux and CI/CD pipelines.
+    <div class="project-card">
 
-                </p>
+        <img src="images/project1.png" alt="Project">
 
-                <p>
+        <h3>Dockerized Portfolio Website</h3>
 
-                    I enjoy automating infrastructure,
-                    deploying applications,
-                    and improving software delivery
-                    through DevOps best practices.
+        <p>CI/CD + Docker + AWS Deployment Project</p>
 
-                </p>
+    </div>
 
-            </div>
+</section>
 
-        </div>
+<!-- ================= CONTACT SECTION ================= -->
+<section id="contact">
 
-    </section>
+    <div class="section-title">
+        <h2>Contact Me</h2>
+    </div>
+
+    <div class="contact-card">
+
+        <p>📧 Email: <a href="mailto:shivasaiade@gmail.com">shivasaiade@gmail.com</a></p>
+
+        <p>💼 LinkedIn: <a href="#">linkedin.com/in/shiva-sai-ade</a></p>
+
+        <p>🐙 GitHub: <a href="https://github.com/shivasaiade09">github.com/shivasaiade09</a></p>
+
+    </div>
+
+</section>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="script.js"></script>
+
+</body>
+</html>
