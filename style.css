@@ -30,6 +30,104 @@ body.dark{
     --light:#4b5563;
 
 }
+/* Vivid Background Gradient */
+body {
+    background: linear-gradient(135deg, #0f172a, #1e1b4b, #2e1065);
+}
+
+/* Tab Buttons with Glow Effects */
+nav {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.nav-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid transparent;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover, .nav-btn.active {
+    background: #06b6d4;
+    box-shadow: 0 0 15px #06b6d4;
+    border-color: #22d3ee;
+}
+
+/* Smooth Switching Animations */
+.content-section {
+    display: none;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+.content-section.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Colorful Neon Badges for Skills */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.skill-badge {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    color: #fff;
+}
+
+.html { background: #ea580c; box-shadow: 0 0 10px rgba(234, 88, 12, 0.5); }
+.css { background: #2563eb; box-shadow: 0 0 10px rgba(37, 99, 235, 0.5); }
+.js { background: #ca8a04; box-shadow: 0 0 10px rgba(202, 138, 4, 0.5); }
+.docker { background: #0284c7; box-shadow: 0 0 10px rgba(2, 132, 199, 0.5); }
+
+/* Eye-Catching Gradient Download Button */
+.download-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #ec4899, #8b5cf6);
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.4);
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(236, 72, 153, 0.7);
+}
+
+.contact-card a {
+    color: #22d3ee;
+    text-decoration: none;
+}
 
 /* ==========================================
    Reset
