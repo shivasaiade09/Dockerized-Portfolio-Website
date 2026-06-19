@@ -30,6 +30,7 @@
 
 <body>
 
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">
             <span>Shiva Sai Ade</span>
@@ -43,29 +44,7 @@
         </ul>
     </nav>
 
-    <section id="resume" class="resume-section">
-        <h2>My Resume</h2>
-
-        <div class="resume-container">
-            <iframe 
-                src="resume/Shiva-Resume.pdf" 
-                width="100%" 
-                height="600px" 
-                style="border: none;">
-                <p>This browser does not support PDF embeds. Please use the download button below to view the resume.</p>
-            </iframe>
-
-            <div class="resume-buttons">
-                <a href="resume/Shiva-Resume.pdf" download="Shiva_Sai_Ade_Resume.pdf" class="btn">
-                    Download Resume
-                </a>
-                <a href="resume/Shiva-Resume.pdf" target="_blank" class="btn secondary">
-                    View Full Screen
-                </a>
-            </div>
-        </div>
-    </section>
-
+    <!-- HERO SECTION -->
     <section id="home" class="hero">
         <div id="particles-js"></div>
 
@@ -83,11 +62,11 @@
             </p>
 
             <div class="hero-buttons">
-                <a href="resume/Shiva-Resume.pdf" class="btn primary" download="Shiva_Sai_Ade_Resume.pdf">
-                    Download Resume
-                </a>
-                <a href="#projects" class="btn secondary">
+                <a href="#projects" class="btn primary">
                     View Projects
+                </a>
+                <a href="#contact" class="btn secondary">
+                    Contact Me
                 </a>
             </div>
 
@@ -105,6 +84,7 @@
         </div>
     </section>
 
+    <!-- ABOUT SECTION -->
     <section id="about">
         <div class="section-title">
             <h2>About Me</h2>
@@ -115,20 +95,21 @@
                 <p>
                     I am a passionate DevOps Engineer and Cloud Enthusiast with hands-on experience in AWS,
                     Docker, Kubernetes, Jenkins, Terraform, Git, and Linux.
-                    Worked on automating application deployment using DevOps practices such as CI/CD pipelines and 
-                    containerization with Docker. Implemented version control using Git and improved deployment efficiency
-                    by packaging applications into portable containers. Focused on building scalable and reliable deployment workflows.
                 </p>
+
                 <p>
                     I focus on automating infrastructure, building CI/CD pipelines, and deploying scalable cloud-native applications.
-                    DevOps is a combination of Development (Dev) and Operations (Ops) that focuses on building, testing, and deploying 
-                    software faster and more reliably by improving collaboration between developers and IT operations teams.
+                    DevOps combines Development (Dev) and Operations (Ops) to deliver software faster, safer, and more reliably.
+                    The image shows an Nginx 404 Not Found error embedded inside an iframe or object container on your website. 
+                    Since Nginx itself is running and responding, your Docker container is working, but Nginx cannot find the specific file
+                    (likely your resume PDF or HTML file) at the path your code is pointing to.
+                    
                 </p>
             </div>
         </div>
     </section>
 
-
+    <!-- SCRIPT -->
     <script src="script.js"></script>
 
 </body>
