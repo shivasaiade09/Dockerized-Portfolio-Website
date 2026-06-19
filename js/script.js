@@ -34,3 +34,30 @@ window.addEventListener("scroll", () => {
     }
 
 });
+function showSection(sectionId) {
+    // 1. Hide all elements with the class 'content-section'
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => {
+        section.classList.remove('active');
+    });
+
+    // 2. Remove the glow highlighting from all menu buttons
+    const buttons = document.querySelectorAll('.nav-btn');
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    // 3. Make the clicked section visible
+    const activeSection = document.getElementById(sectionId);
+    if (activeSection) {
+        activeSection.classList.add('active');
+    }
+
+    // 4. Highlight the currently selected navigation button
+    const clickedButton = Array.from(buttons).find(btn => 
+        btn.getAttribute('onclick').includes(sectionId)
+    );
+    if (clickedButton) {
+        clickedButton.classList.add('active');
+    }
+}
