@@ -1,0 +1,36 @@
+/* ===== COLORFUL GRADIENT THEME ===== */
+:root {
+    --primary: #00c6ff;
+    --secondary: #0072ff;
+    --accent: #ff4ecd;
+    --dark: #0f172a;
+}
+
+/* Animated background */
+body {
+    background: linear-gradient(-45deg, #0f172a, #1e293b, #0ea5e9, #9333ea);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: white;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Glow buttons */
+button, .btn {
+    background: linear-gradient(45deg, var(--primary), var(--accent));
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--accent);
+}
