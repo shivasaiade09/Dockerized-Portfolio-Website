@@ -1,9 +1,4 @@
-// ===== Smooth scroll highlight =====
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("Enhancements Loaded 🚀");
-});
-
-// ===== Fade-in sections on scroll =====
+// ===== Scroll Animation =====
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -17,7 +12,10 @@ document.querySelectorAll("section").forEach(sec => {
     observer.observe(sec);
 });
 
-// ===== Fix long skill lists (desktop UI improvement) =====
-document.querySelectorAll(".skills li").forEach(el => {
-    el.classList.add("skill");
+// ===== Floating background effect =====
+document.addEventListener("mousemove", (e) => {
+    document.body.style.setProperty("--x", e.clientX + "px");
+    document.body.style.setProperty("--y", e.clientY + "px");
 });
+
+console.log("Portfolio Enhancements Loaded 🚀");
