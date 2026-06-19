@@ -1,0 +1,50 @@
+/* ===== GLOBAL DESKTOP FIX ===== */
+body {
+    overflow-x: hidden;
+}
+
+.container, section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== SKILLS SECTION FIX ===== */
+.skills, .skill-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Convert skill items into cards */
+.skill, .skills li {
+    list-style: none;
+    padding: 15px;
+    background: #111;
+    color: #fff;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.skill:hover, .skills li:hover {
+    transform: translateY(-8px) scale(1.05);
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+/* ===== DESKTOP FIX ===== */
+@media (min-width: 1024px) {
+    section {
+        padding: 80px 120px;
+    }
+
+    h1, h2, h3 {
+        letter-spacing: 1px;
+    }
+}
+
+/* ===== SMOOTH UI ===== */
+html {
+    scroll-behavior: smooth;
+}
