@@ -61,3 +61,26 @@ function showSection(sectionId) {
         clickedButton.classList.add('active');
     }
 }
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href"))
+        .scrollIntoView({ behavior: "smooth" });
+    });
+});
+
+// Simple typing effect
+const text = "DevOps Engineer | Cloud Enthusiast | Kubernetes Learner";
+let i = 0;
+
+function typeEffect() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 80);
+    }
+}
+
+typeEffect();
