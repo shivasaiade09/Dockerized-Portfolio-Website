@@ -1,33 +1,22 @@
-# =========================
-# Stage 1: Build Stage
-# =========================
+# Stage 1: Builder
 FROM alpine:3.20 AS builder
 
-# Create working directory
 WORKDIR /app
-
-# Copy all project files into build stage
 COPY . .
 
-# (Optional) You can add minification steps here later
-# Example: HTML/CSS/JS optimization tools
-
-# =========================
-# Stage 2: Production Stage
-# =========================
+# Stage 2: Nginx runtime
 FROM nginx:alpine
 
-# Remove default nginx website
-RUN rm -rf /usr/share/nginx/html/*
+WORKDIR /usr/share/nginx/html
 
-# Copy built files from builder stage
-COPY --from=builder /app /usr/share/nginx/html
+# Remove default files
+RUN rm -rf ./*
 
-# Security improvement (optional but good practice)
-RUN echo "server_tokens off;" >> /etc/nginx/nginx.conf
+# Copy project
+COPY --from=builder /app .
 
 # Expose port
 EXPOSE 80
 
-# Start nginx
+# Run nginx
 CMD ["nginx", "-g", "daemon off;"]
