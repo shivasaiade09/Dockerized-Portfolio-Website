@@ -7,7 +7,37 @@ body {
     max-width: 1200px;
     margin: auto;
 }
+/* ===== DESKTOP FIX ===== */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
 
+/* Skills Grid Fix */
+.skills, .skill-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+/* Skill Cards */
+.skills li, .skill {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: 0.4s;
+}
+
+.skills li:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(0,198,255,0.4);
+}
+
+/* Section spacing */
+section {
+    padding: 80px 100px;
+}
 /* ===== SKILLS SECTION FIX ===== */
 .skills, .skill-container {
     display: grid !important;
