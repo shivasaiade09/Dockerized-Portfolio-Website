@@ -7,25 +7,18 @@
 
     <title>Shiva Sai Ade | DevOps Engineer</title>
 
-    <!-- Favicon -->
     <link rel="icon" href="assets/favicon.ico">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/effects.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/themes.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- JS (load in head safely with defer only) -->
     <script defer src="./js/animations.js"></script>
     <script defer src="./js/theme-toggle.js"></script>
     <script defer src="./js/toast.js"></script>
@@ -33,144 +26,110 @@
     <script defer src="./js/enhancements.js"></script>
     <script defer src="./js/resume.js"></script>
     <script defer src="./assets/particles.js"></script>
-
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar">
+    <nav class="navbar">
+        <div class="logo">
+            <span>Shiva Sai Ade</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div class="logo">
-        <span>Shiva Sai Ade</span>
-    </div>
-
-    <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-
-</nav>
     <section id="resume" class="resume-section">
-  <h2>My Resume</h2>
+        <h2>My Resume</h2>
 
-  <div class="resume-container">
-    
-    <!-- PDF Viewer -->
-    <iframe 
-      src="resume/Shiva_Sai_Ade_Resume.pdf" 
-      width="100%" 
-      height="600px">
-    </iframe>
+        <div class="resume-container">
+            <iframe 
+                src="resume/Shiva-Resume.pdf" 
+                width="100%" 
+                height="600px" 
+                style="border: none;">
+                <p>This browser does not support PDF embeds. Please use the download button below to view the resume.</p>
+            </iframe>
 
-    <!-- Buttons -->
-    <div class="resume-buttons">
-      <a href="resume/Shiva-Resume.pdf" download class="btn">
-        Download Resume
-      </a>
-
-      <a href="resume/Shiva-Resume.pdf" target="_blank" class="btn secondary">
-        View Full Screen
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= HERO SECTION ================= -->
-<section id="home" class="hero">
-
-    <div id="particles-js"></div>
-
-    <div class="hero-content">
-
-        <img src="images/profile.png" class="profile-img" alt="Profile">
-
-        <h3>Hello, I'm</h3>
-        <h1>Shiva Sai Ade</h1>
-
-        <h2><span id="typing"></span></h2>
-
-        <p>
-            DevOps Engineer focused on CI/CD automation, cloud infrastructure (AWS),
-            containerization (Docker), orchestration (Kubernetes), and Infrastructure as Code (Terraform).
-            I build scalable, reliable, and automated deployment pipelines.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="assets/resume.pdf" class="btn primary" download>
-                Download Resume
-            </a>
-            <a href="#projects" class="btn secondary">
-                View Projects
-            </a>
+            <div class="resume-buttons">
+                <a href="resume/Shiva-Resume.pdf" download="Shiva_Sai_Ade_Resume.pdf" class="btn">
+                    Download Resume
+                </a>
+                <a href="resume/Shiva-Resume.pdf" target="_blank" class="btn secondary">
+                    View Full Screen
+                </a>
+            </div>
         </div>
+    </section>
 
-        <div class="social-icons">
-            <a href="https://github.com/shivasaiade09" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
 
-            <a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
+        <div class="hero-content">
+            <img src="images/profile.png" class="profile-img" alt="Profile">
 
-            <a href="mailto:shivasaiade@gmail.com">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= ABOUT SECTION ================= -->
-<section id="about">
-
-    <div class="section-title">
-        <h2>About Me</h2>
-    </div>
-
-    <div class="about-container">
-
-        <div class="about-text">
-            <p>
-                I am a passionate DevOps Engineer and Cloud Enthusiast with hands-on experience in AWS,
-                Docker, Kubernetes, Jenkins, Terraform, Git, and Linux.
-            </p>
+            <h3>Hello, I'm</h3>
+            <h1>Shiva Sai Ade</h1>
+            <h2><span id="typing"></span></h2>
 
             <p>
-                I focus on automating infrastructure, building CI/CD pipelines, and deploying scalable cloud-native applications.
-                
-                
+                DevOps Engineer focused on CI/CD automation, cloud infrastructure (AWS),
+                containerization (Docker), orchestration (Kubernetes), and Infrastructure as Code (Terraform).
+                I build scalable, reliable, and automated deployment pipelines.
             </p>
+
+            <div class="hero-buttons">
+                <a href="resume/Shiva-Resume.pdf" class="btn primary" download="Shiva_Sai_Ade_Resume.pdf">
+                    Download Resume
+                </a>
+                <a href="#projects" class="btn secondary">
+                    View Projects
+                </a>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://github.com/shivasaiade09" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:shivasaiade@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-title">
+            <h2>About Me</h2>
         </div>
 
-    </div>
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    I am a passionate DevOps Engineer and Cloud Enthusiast with hands-on experience in AWS,
+                    Docker, Kubernetes, Jenkins, Terraform, Git, and Linux.
+                    Worked on automating application deployment using DevOps practices such as CI/CD pipelines and 
+                    containerization with Docker. Implemented version control using Git and improved deployment efficiency
+                    by packaging applications into portable containers. Focused on building scalable and reliable deployment workflows.
+                </p>
+                <p>
+                    I focus on automating infrastructure, building CI/CD pipelines, and deploying scalable cloud-native applications.
+                    DevOps is a combination of Development (Dev) and Operations (Ops) that focuses on building, testing, and deploying 
+                    software faster and more reliably by improving collaboration between developers and IT operations teams.
+                </p>
+            </div>
+        </div>
+    </section>
 
-</section>
 
-<!-- ================= CONTACT SECTION ================= -->
-<section id="contact">
-
-    <div class="section-title">
-        <h2>Contact Me</h2>
-    </div>
-
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-
-</section>
-
-<!-- ================= SCRIPTS ================= -->
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
